@@ -50,6 +50,7 @@ const Signup = (props) => {
             value={password}
             placeholder="Create Password"
             className="form"
+            type="password"
           />
         </FormGroup>
         <Button type="submit" className="button">

@@ -46,6 +46,7 @@ const Login = (props) => {
             value={password}
             placeholder="Enter your password"
             className="form"
+            type="password"
           />
         </FormGroup>
         <Button type="submit" className="button">

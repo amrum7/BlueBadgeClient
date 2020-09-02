@@ -2,11 +2,15 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import Signup from "./Signup";
 import Login from "./Login";
+import Jumbo from "../home/Jumbo";
 import "../App.css";
 
 const Auth = (props) => {
   return (
     <Container className="auth-container">
+      <Row>
+        <Jumbo />
+      </Row>
       <Row>
         <Col md="4"></Col>
         <Col md="4">

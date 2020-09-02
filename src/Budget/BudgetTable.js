@@ -51,7 +51,7 @@ const BudgetTable = (props) => {
     <>
       <h3 className="HeadTable">Budget History</h3>
       <hr />
-      <Table className="Table">
+      <Table hover className="Table">
         <thead>
           <tr>
             <th>#</th>

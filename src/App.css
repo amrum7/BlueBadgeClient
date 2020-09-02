@@ -169,3 +169,9 @@ p {
   margin-top: 60px;
   font-weight: bold;
 }
+
+.Jumbo {
+  background-color: rgb(242, 242, 242);
+  font-family: "Open Sans", sans-serif;
+  border: 1px solid rgb(0, 191, 225);
+}
