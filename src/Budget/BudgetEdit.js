@@ -20,10 +20,10 @@ const BudgetEdit = (props) => {
 
   const budgetUpdate = (event) => {
     event.preventDefault();
-    fetch(`${APIURL}/budget/budget`, {
+    fetch(`${APIURL}/budget/budget/${props.budgetToUpdate.id}`, {
       method: "PUT",
       body: JSON.stringify({
-        log: {
+        budget: {
           type: editTyp,
           category: editCat,
           amount: editAmo,

@@ -5,7 +5,7 @@ import "../App.css";
 
 const BudgetTable = (props) => {
   const deleteBudget = (budget) => {
-    fetch(`${APIURL}/budget/budget`, {
+    fetch(`${APIURL}/budget/budget/${budget.id}`, {
       method: "DELETE",
       headers: new Headers({
         "Content-Type": "application/json",
