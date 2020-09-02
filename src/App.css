@@ -1,38 +1,171 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+  color: black;
+}
+
+/* BODY */
+body {
+  background-color: #f7f7f7;
+}
+h1 {
+  color: rgb(0, 191, 225);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  color: rgb(0, 191, 225);
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+h3 {
+  color: rgb(0, 191, 225);
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* .HeadBudgetCreate h3 {
+  background: rgb(0, 191, 225);
+  padding: 10px;
+} */
+
+p {
+  font-size: 20px;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* BUTTON */
+
+.button {
+  background-color: rgb(0, 191, 225);
+  border: none;
+  padding: 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.button:hover {
+  background-color: rgb(0, 134, 159);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ButtonEdit {
+  background-color: rgb(0, 191, 225);
+  margin-right: 10px;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.ButtonEdit:hover {
+  background-color: rgb(0, 134, 159);
+}
+
+.ButtonDelete {
+  background-color: rgb(0, 191, 225);
+  border: none;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.ButtonDelete:hover {
+  background-color: rgb(0, 134, 159);
+}
+
+.SaveChangesbutton {
+  background-color: rgb(0, 191, 225);
+  margin-right: 15px;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.SaveChangesbutton:hover {
+  background-color: rgb(0, 134, 159);
+}
+
+.Cancelbutton {
+  background-color: rgb(0, 191, 225);
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.Cancelbutton:hover {
+  background-color: rgb(0, 134, 159);
+}
+
+/* NAVBR */
+.Navbar {
+  background-color: #f7f7f7;
+  color: white;
+}
+
+/* BUDGET INDEX */
+
+.table {
+  background-color: #f7f7f7;
+  color: black;
+}
+
+/* BUDGET EDIT */
+.DivBudgetEdit {
+  background-color: #f7f7f7;
+}
+
+.form {
+  padding: 15px;
+  margin: 5px;
+  border: none;
+}
+
+.BudgetCreate {
+  margin-top: 15px;
+}
+
+.HeadBudgetCreate {
+  margin-top: 50px;
+}
+
+.HeadTable {
+  margin-top: 30px;
+}
+
+.Table {
+  margin-top: 15px;
+}
+
+.Login {
+  margin-top: 50px;
+}
+
+.Signup {
+  margin-top: 25px;
+}
+
+.HeadSignup {
+  margin-top: 60px;
+  font-weight: bold;
 }

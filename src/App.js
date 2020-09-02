@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Sitebar from "./home/Navbar";
 import Auth from "./auth/Auth";
+import BudgetIndex from "./Budget/BudgetIndex";
 import "./App.css";
 
 function App() {
@@ -18,10 +19,23 @@ function App() {
     console.log(sessionToken);
   };
 
+  const clearToken = () => {
+    localStorage.clear();
+    setSessionToken("");
+  };
+
+  const protectedViews = () => {
+    return sessionToken === localStorage.getItem("token") ? (
+      <BudgetIndex token={sessionToken} />
+    ) : (
+      <Auth updateToken={updateToken} />
+    );
+  };
+
   return (
     <div>
-      <Sitebar />
-      <Auth />
+      <Sitebar clickLogout={clearToken} />
+      {protectedViews()}
     </div>
   );
 }
