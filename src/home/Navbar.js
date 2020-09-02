@@ -19,7 +19,12 @@ const Sitebar = (props) => {
 
   return (
     <Navbar color="faded" light expand="md" className="Navbar">
-      <NavbarBrand href="/">Budget Buddy</NavbarBrand>
+      <NavbarBrand href="/">
+        <img
+          src="https://img.icons8.com/pastel-glyph/64/000000/dog-footprint.png"
+          style={{ width: 40, marginTop: -7 }}
+        />
+      </NavbarBrand>
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="ml-auto" navbar>
