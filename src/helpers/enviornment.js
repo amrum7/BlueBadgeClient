@@ -9,7 +9,7 @@ switch (window.location.hostname) {
   // this is the deployed react application
   case "budget-bluebadge-client.herokuapp.com":
     // this is the full url of your deployed API
-    APIURL = "https://budget-bluebadge-server.herokuapp.com/";
+    APIURL = "https://budget-bluebadge-server.herokuapp.com";
 }
 
 export default APIURL;
