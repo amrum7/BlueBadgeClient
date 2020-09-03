@@ -42,7 +42,9 @@ const BudgetCreate = (props) => {
       <h3 className="HeadBudgetCreate">Enter Budget Item</h3>
       <Form onSubmit={handleSubmit} className="BudgetCreate">
         <FormGroup>
-          <Label htmlFor="type" />
+          <Label htmlFor="type" className="createheader">
+            Type
+          </Label>
           <Input
             name="type"
             value={type}
@@ -52,7 +54,9 @@ const BudgetCreate = (props) => {
           />
         </FormGroup>
         <FormGroup>
-          <Label htmlFor="category" />
+          <Label htmlFor="category" className="createheader">
+            Category
+          </Label>
           <Input
             name="category"
             value={category}
@@ -62,7 +66,9 @@ const BudgetCreate = (props) => {
           ></Input>
         </FormGroup>
         <FormGroup>
-          <Label htmlFor="amount" />
+          <Label htmlFor="amount" className="createheader">
+            Amount
+          </Label>
           <Input
             name="amount"
             value={amount}
@@ -72,7 +78,9 @@ const BudgetCreate = (props) => {
           />
         </FormGroup>
         <FormGroup>
-          <Label htmlFor="date" />
+          <Label htmlFor="date" className="createheader">
+            Date
+          </Label>
           <Input
             name="date"
             value={date}

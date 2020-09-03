@@ -35,6 +35,7 @@ const Signup = (props) => {
               setUsername(e.target.value);
             }}
             name="email"
+            type="email"
             value={username}
             placeholder="Email Required"
             className="form"
