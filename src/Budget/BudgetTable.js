@@ -14,38 +14,42 @@ const BudgetTable = (props) => {
     }).then(() => props.fetchBudgets());
   };
   const budgetMapper = () => {
-    return props.budgets.map((budget, index) => {
-      return (
-        <tr key={index}>
-          <th scope="row">{budget.id}</th>
-          <td>{budget.type}</td>
-          <td>{budget.category}</td>
-          <td>{budget.amount}</td>
-          <td>{budget.date}</td>
-          <td>
-            <Button
-              className="button"
-              onClick={() => {
-                props.editUpdateBudget(budget);
-                props.updateOn();
-              }}
-              className="ButtonEdit"
-            >
-              Edit
-            </Button>
-            <Button
-              className="button"
-              onClick={() => {
-                deleteBudget(budget);
-              }}
-              className="ButtonDelete"
-            >
-              Delete
-            </Button>
-          </td>
-        </tr>
-      );
-    });
+    return props.budget !== undefined ? (
+      props.budgets.map((budget, index) => {
+        return (
+          <tr key={index}>
+            <th scope="row">{budget.id}</th>
+            <td>{budget.type}</td>
+            <td>{budget.category}</td>
+            <td>{budget.amount}</td>
+            <td>{budget.date}</td>
+            <td>
+              <Button
+                className="button"
+                onClick={() => {
+                  props.editUpdateBudget(budget);
+                  props.updateOn();
+                }}
+                className="ButtonEdit"
+              >
+                Edit
+              </Button>
+              <Button
+                className="button"
+                onClick={() => {
+                  deleteBudget(budget);
+                }}
+                className="ButtonDelete"
+              >
+                Delete
+              </Button>
+            </td>
+          </tr>
+        );
+      })
+    ) : (
+      <> </>
+    );
   };
   return (
     <>
